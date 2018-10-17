@@ -7,7 +7,7 @@ export function getWeather(lat, lon) {
     // возвращается запрос, который после удачного выполнения переводит ответ из json в объект.
     // lat и lon - координаты места на карте для запроса по ним погоды 
     return fetch(
-        `http://api.openweathermap.org/data/2.5/${weatherType}?lat=${lat}&lon=${lon}&APPID=${appid}&units=${units}`
+        `https://api.openweathermap.org/data/2.5/${weatherType}?lat=${lat}&lon=${lon}&APPID=${appid}&units=${units}`
         ,
         {
             method: "GET",
