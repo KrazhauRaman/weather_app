@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@mapbox/react-geocoder": "^2.5.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.5.2",
@@ -15,6 +16,8 @@
     "redux-saga": "^0.16.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -28,5 +31,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://krazhauraman.github.io/weather_app/"
 }
