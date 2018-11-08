@@ -63,7 +63,6 @@ class Map extends Component {
 
   //при смене позиции на карте записывается дата последнего изменения позиции и обновляются в сторе координаты
   onViewportChange = viewport => {
-    console.log(this.props.viewport.zoom, viewport.zoom)
     this.props.changeViewport({ ...this.props.viewport, ...viewport });
     this.setState({
       lastTime: Date.now(),

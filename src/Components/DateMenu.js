@@ -52,7 +52,7 @@ class DateMenu extends Component {
 
     render() {
         return (
-            <div className="daySelector" style={{ position: 'absolute', left: 10, top: 190 }}>
+            <div className="daySelector" style={{ position: 'absolute', right: 10, top: 60 }}>
                 <button className="buttonMain"
                     onClick={(!this.state.opened) ? this.openMenu.bind(this) : this.closeMenu.bind(this)}> Choose date </button>
                 <ReactCSSTransitionGroup transitionName="anim" transitionAppear={false} transitionEnterTimeout={500} transitionEnter={true} transitionLeaveTimeout={500} transitionLeave={true}>
